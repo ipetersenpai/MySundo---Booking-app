@@ -3,12 +3,13 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { DrawerListComponent } from "./DrawerList";
 import Dashboard from "../../features/Home/screens/Dashboard";
+import BookARide from "../../features/Home/screens/BookARide";
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 const DashboardScreen = () => <Dashboard />;
 const SundoScreen = () => null;
-const BookARideScreen = () => null;
+const BookARideScreen = () => <BookARide />;
 const BookForLaterScreen = () => null;
 const BookForSomeoneScreen = () => null;
 
