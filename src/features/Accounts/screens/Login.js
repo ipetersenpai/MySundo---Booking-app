@@ -10,7 +10,7 @@ import {
 import { React, useState } from "react";
 import { styles } from "../components/LoginStyles";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import CarouselComponent from "../../../components/CarouselComponents";
+import Carousel from "../../../components/Carousel";
 import axios from "../../../plugin/axios";
 import { useNavigation } from "@react-navigation/native";
 
@@ -53,7 +53,7 @@ export default function Login() {
       />
 
       <View style={styles.carousel}>
-        <CarouselComponent />
+        <Carousel />
       </View>
 
       <View style={styles.backbutton}>

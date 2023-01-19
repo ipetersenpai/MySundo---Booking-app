@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, StatusBar } from "react-native";
 import { styles } from "../components/LandingPageStyles";
-import CarouselComponent from "../../../components/CarouselComponents";
+import Carousel from "../../../components/Carousel";
 import { useNavigation } from "@react-navigation/native";
 
 export default function LandingPage() {
@@ -21,7 +21,7 @@ export default function LandingPage() {
       />
 
       <View style={styles.carousel}>
-        <CarouselComponent />
+        <Carousel />
       </View>
 
       <View style={styles.backbutton}>
