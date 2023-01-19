@@ -2,11 +2,11 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { DrawerListComponent } from "./DrawerList";
-import Dashboard from "../../features/Home/screens/Dashboard";
+import Message from "../../features/Message/screens/Message";
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
-const DashboardScreen = () => null;
+const MessageScreen = () => <Message />;
 
 export default function MessageDrawerStack() {
   return (
@@ -19,7 +19,7 @@ export default function MessageDrawerStack() {
         drawerPosition: "right",
       }}
       drawerContent={DrawerListComponent}>
-      <Stack.Screen name="Message List" component={DashboardScreen} />
+      <Stack.Screen name="Message List" component={MessageScreen} />
     </Drawer.Navigator>
   );
 }
