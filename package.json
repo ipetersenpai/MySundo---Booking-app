@@ -12,6 +12,7 @@
     "@homielab/react-native-auto-scroll": "^0.0.8",
     "@react-native-community/clipboard": "^1.5.1",
     "@react-native-community/datetimepicker": "6.5.2",
+    "@react-navigation/bottom-tabs": "^6.5.3",
     "@react-navigation/drawer": "^6.5.7",
     "@react-navigation/native": "^6.1.1",
     "@react-navigation/native-stack": "^6.9.7",
