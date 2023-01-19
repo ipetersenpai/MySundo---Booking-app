@@ -2,10 +2,11 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { DrawerListComponent } from "./DrawerList";
+import Booklisting from "../../features/Booklisting/screens/Booklisting";
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
-const ListScreen = () => null;
+const ListScreen = () => <Booklisting />;
 
 export default function BookinglistDrawerStack() {
   return (
