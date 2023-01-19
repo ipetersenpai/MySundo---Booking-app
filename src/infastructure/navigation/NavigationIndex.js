@@ -6,7 +6,7 @@ import { NavigationContainer } from "@react-navigation/native";
 export default function NavigationIndex() {
   return (
     <NavigationContainer>
-      {false ? <AppNavigation /> : <Account />}
+      {true ? <AppNavigation /> : <Account />}
     </NavigationContainer>
   );
 }
