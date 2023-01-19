@@ -76,14 +76,14 @@ export default function ResetPassword1() {
         <TouchableOpacity
           style={styles.buttonstyle}
           onPress={() => {
-            if (verfiedemail != "a") {
+            if (verfiedemail !== "a") {
               Alert.alert(
                 "No account found",
                 "There's no Sundo Account with the email that you provided.",
                 [{ text: "close", onPress: () => console.log("alert closed") }]
               );
-            } else if (verfiedemail == "a") {
-              navigation.navigate("Screen2");
+            } else if (verfiedemail === "a") {
+              navigation.navigate("Reset Password 2");
             }
           }}>
           <Image
@@ -109,7 +109,7 @@ export default function ResetPassword1() {
       <View style={styles.backbutton}>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate("LoginScreen");
+            navigation.goBack();
           }}>
           <Icon name={"arrow-left"} size={42} color={"white"} />
         </TouchableOpacity>
