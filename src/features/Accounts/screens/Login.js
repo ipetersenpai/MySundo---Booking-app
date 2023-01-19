@@ -172,7 +172,7 @@ export default function Login() {
 
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("Screen1");
+              navigation.navigate("Reset Password 1");
             }}
             style={{ alignContent: "center" }}>
             <Text style={styles.clickherestyle}> click here</Text>
@@ -184,7 +184,7 @@ export default function Login() {
 
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("SUscreen1");
+              navigation.navigate("User Information");
             }}
             style={{ alignContent: "center" }}>
             <Text style={styles.clickherestyle}> Signup here</Text>
