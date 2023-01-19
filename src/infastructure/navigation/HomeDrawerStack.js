@@ -2,14 +2,15 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { DrawerListComponent } from "./DrawerList";
+import Dashboard from "../../features/Home/screens/Dashboard";
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
-const Dashboard = () => null;
-const Sundo = () => null;
-const BookARide = () => null;
-const BookForLater = () => null;
-const BookForSomeone = () => null;
+const DashboardScreen = () => <Dashboard />;
+const SundoScreen = () => null;
+const BookARideScreen = () => null;
+const BookForLaterScreen = () => null;
+const BookForSomeoneScreen = () => null;
 
 export default function HomeDrawerStack() {
   return (
@@ -22,11 +23,11 @@ export default function HomeDrawerStack() {
         drawerPosition: "right",
       }}
       drawerContent={DrawerListComponent}>
-      <Stack.Screen name="Dashboard" component={Dashboard} />
-      <Stack.Screen name="Sundo" component={Sundo} />
-      <Stack.Screen name="Book A Ride" component={BookARide} />
-      <Stack.Screen name="Book for Later" component={BookForLater} />
-      <Stack.Screen name="Book for Someone" component={BookForSomeone} />
+      <Stack.Screen name="Dashboard" component={DashboardScreen} />
+      <Stack.Screen name="Sundo" component={SundoScreen} />
+      <Stack.Screen name="Book A Ride" component={BookARideScreen} />
+      <Stack.Screen name="Book for Later" component={BookForLaterScreen} />
+      <Stack.Screen name="Book for Someone" component={BookForSomeoneScreen} />
     </Drawer.Navigator>
   );
 }
