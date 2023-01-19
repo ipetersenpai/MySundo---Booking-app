@@ -14,8 +14,10 @@ import {
 import { React, useState, useRef } from "react";
 import { styles } from "../components/ResetPassword2Styles";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import { useNavigation } from "@react-navigation/native";
 
-export default function ResetPassword2({ navigation }) {
+export default function ResetPassword2() {
+  const navigation = useNavigation();
   const [verfiedemail, setVerfiedemail] = useState("");
 
   const [otp, setOtp] = useState([]);
@@ -152,7 +154,7 @@ export default function ResetPassword2({ navigation }) {
         <TouchableOpacity
           style={styles.buttonstyle}
           onPress={() => {
-            navigation.navigate("Screen3");
+            navigation.navigate("Reset Password 3");
 
             console.log(otp.toString());
           }}>
@@ -179,7 +181,7 @@ export default function ResetPassword2({ navigation }) {
       <View style={styles.backbutton}>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate("Screen1");
+            navigation.goBack();
           }}>
           <Icon name={"arrow-left"} size={42} color={"white"} />
         </TouchableOpacity>
