@@ -87,7 +87,7 @@ export default function Dashboard() {
           <TouchableOpacity
             style={styles.selectbutton}
             onPress={() => {
-              navigation.navigate("BookScreen1");
+              navigation.navigate("Book A Ride");
             }}>
             <Text
               style={{
