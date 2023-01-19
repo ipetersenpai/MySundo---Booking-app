@@ -1,0 +1,7 @@
+{
+  "extends": ["@react-native-community"],
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "quotes": ["warn", "single", { "avoidEscape": true }]
+  }
+}
